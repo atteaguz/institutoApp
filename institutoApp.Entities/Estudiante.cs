@@ -13,7 +13,7 @@ namespace Academico.Entities
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
-        [Required(ErrorMessage = "La cédula es obligatoria")]
+        [Required(ErrorMessage = "La cedula es obligatoria")]
         [MaxLength(20, ErrorMessage = "La cedula no puede exceder los 20 caracteres")]
         public string Cedula { get; set; }
 

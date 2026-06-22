@@ -16,11 +16,11 @@ namespace Academico.Entities
         [MaxLength(150, ErrorMessage = "El nombre no puede exceder los 150 caracteres")]
         public string Nombre { get; set; }
 
-        [MaxLength(500, ErrorMessage = "La descripción no puede exceder los 500 caracteres")]
+        [MaxLength(500, ErrorMessage = "La descripcion no puede exceder los 500 caracteres")]
         public string? Descripcion { get; set; }
 
-        [Required(ErrorMessage = "El cupo máximo es obligatorio")]
-        [Range(1, int.MaxValue, ErrorMessage = "El cupo máximo debe ser mayor a 0")]
+        [Required(ErrorMessage = "El maximo de estudiantes es obligatorio")]
+        [Range(1, int.MaxValue, ErrorMessage = "El maximo de estudiantes debe ser mayor a 0")]
         public int CupoMaximo { get; set; }
 
         public bool Estado { get; set; } = true;

@@ -1,0 +1,9 @@
+<Solution>
+  <Project Path="Academico.Repository/Academico.Repository.csproj" />
+  <Project Path="Academico.Services/Academico.Services.csproj" />
+  <Project Path="institutoApp.Api/Academico.Api.csproj" />
+  <Project Path="institutoApp.Common/Academico.Common.csproj" />
+  <Project Path="institutoApp.Data/Academico.Data.csproj" />
+  <Project Path="institutoApp.DTOs/Academico.DTOs.csproj" />
+  <Project Path="institutoApp.Entities/Academico.Entities.csproj" />
+</Solution>

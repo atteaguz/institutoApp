@@ -8,10 +8,28 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="10.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="10.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Controllers\" />
+    <Folder Include="Extensions\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Academico.Services\Academico.Services.csproj" />
+    <ProjectReference Include="..\institutoApp.Common\Academico.Common.csproj" />
+    <ProjectReference Include="..\institutoApp.Data\Academico.Data.csproj" />
+    <ProjectReference Include="..\institutoApp.DTOs\Academico.DTOs.csproj" />
+    <ProjectReference Include="..\institutoApp.Entities\Academico.Entities.csproj" />
   </ItemGroup>
 
 </Project>

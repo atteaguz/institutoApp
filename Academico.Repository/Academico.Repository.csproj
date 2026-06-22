@@ -6,4 +6,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\institutoApp.Common\Academico.Common.csproj" />
+    <ProjectReference Include="..\institutoApp.Data\Academico.Data.csproj" />
+    <ProjectReference Include="..\institutoApp.Entities\Academico.Entities.csproj" />
+  </ItemGroup>
+
 </Project>

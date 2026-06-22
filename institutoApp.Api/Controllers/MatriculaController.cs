@@ -1,6 +1,8 @@
-﻿namespace Academico.Api.Controllers
+﻿using Microsoft.AspNetCore.Mvc;
+
+namespace Academico.Api.Controllers
 {
-    public class MatriculaController
+    public class MatriculaController : Controller
     {
     }
 }

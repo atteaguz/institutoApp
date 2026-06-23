@@ -105,12 +105,6 @@ namespace Academico.Repository
             }
         }
 
-        //no se usa
-        public async Task<bool> ExistePorNombreAsync(string nombre)
-        {
-            return false;
-        }
-
         //metodos agregados para validaciones especificas
         public async Task<Estudiante> ObtenerPorCedulaAsync(string cedula)
         {

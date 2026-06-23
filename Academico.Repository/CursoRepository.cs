@@ -103,20 +103,6 @@ namespace Academico.Repository
         }
 
         //metodos agregados
-        public async Task<bool> ExistePorNombreAsync(string nombre)
-        {
-            try
-            {
-                return await _context.Cursos
-                    .AsNoTracking()
-                    .AnyAsync(c => c.Nombre.ToLower() == nombre.ToLower() && c.Estado == true);
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
-
         public async Task<bool> ExisteNombreAsync(string nombre, int? idExcluir = null)
         {
             try

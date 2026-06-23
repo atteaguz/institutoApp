@@ -11,6 +11,5 @@ namespace Academico.Common.Interfaces
         Task<E> CrearAsync(E entity);
         Task<E> ActualizarAsync(E entity);
         Task<bool> EliminarAsync(int id);
-        Task<bool> ExistePorNombreAsync(string nombre);
     }
 }

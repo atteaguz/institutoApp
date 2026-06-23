@@ -89,12 +89,6 @@ namespace Academico.Repository
             }
         }
 
-        //no se usa
-        public async Task<bool> ExistePorNombreAsync(string nombre)
-        {
-            return false;
-        }
-
         //metodos agregados para validaciones
         public async Task<bool> ExisteMatriculaAsync(int estudianteId, int cursoId)
         {

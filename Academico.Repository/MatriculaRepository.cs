@@ -37,6 +37,7 @@ namespace Academico.Repository
             throw new NotImplementedException();
         }
 
+        //no se usa por requerimentos
         public async Task<bool> EliminarAsync(int id)
         {
             try
@@ -95,9 +96,10 @@ namespace Academico.Repository
             try
             {
                 return await _context.Matriculas
-                    .AnyAsync(m => m.EstudianteId == estudianteId &&
-                                   m.CursoId == cursoId &&
-                                   m.Estado == true);
+                    .AnyAsync
+                    (m => m.EstudianteId == estudianteId &&
+                     m.CursoId == cursoId &&
+                     m.Estado == true);
             }
             catch (Exception ex)
             {

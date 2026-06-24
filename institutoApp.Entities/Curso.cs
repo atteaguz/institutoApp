@@ -27,7 +27,7 @@ namespace Academico.Entities
 
         public DateTime FechaCreacion { get; set; } = DateTime.Now;
 
-        // Relación con Matricula (1 a N)
+        // Relación con Matricula
         public ICollection<Matricula> Matriculas { get; set; } = new List<Matricula>();
     }
 }

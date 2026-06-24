@@ -65,7 +65,7 @@ namespace Academico.Services
             if (await _estudianteRepo.ExisteCedulaAsync(entity.Cedula))
                 throw new DuplicatedCedulaException($"La cedula '{entity.Cedula}' ya esta registrada");
 
-            //correo electronico con formato valido ya esta validado
+            //correo electronico con formato valido ya esta validado por dataAnnotations
 
             //correo debe ser unico
             if (!string.IsNullOrEmpty(entity.CorreoElectronico))
@@ -102,7 +102,7 @@ namespace Academico.Services
             if (await _estudianteRepo.ExisteCedulaAsync(entity.Cedula, entity.Id))
                 throw new DuplicatedCedulaException($"La cedula '{entity.Cedula}' ya esta registrada por otro estudiante");
 
-            //correo electronico con formato valido ya esta validado
+            //correo electronico con formato valido ya esta validado por dataAnnotations
 
             //correo unico (se excluye al estudiante actual para la actualizacion)
             if (!string.IsNullOrEmpty(entity.CorreoElectronico))
